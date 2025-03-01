@@ -9,8 +9,16 @@ namespace P2FixAnAppDotNetCode.Models
 
         void Clear();
 
+        /// <summary>
+        /// Obtient le prix de tous les articles
+        /// </summary>
+        /// <returns></returns>
         double GetTotalValue();
 
+        /// <summary>
+        /// Obtient la moyenne du prix du panier
+        /// </summary>
+        /// <returns></returns>
         double GetAverageValue();
     }
 }
