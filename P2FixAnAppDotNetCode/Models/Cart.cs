@@ -27,7 +27,7 @@ namespace P2FixAnAppDotNetCode.Models
             if (quantity <= 0)
                 return;
             
-            var cartLine = _cartLinesList.FirstOrDefault(f => f.Product.Id == product.Id);
+            var cartLine = _cartLinesList.SingleOrDefault(f => f.Product.Id == product.Id);
             if (cartLine == null)
             {
                 cartLine = new CartLine()
